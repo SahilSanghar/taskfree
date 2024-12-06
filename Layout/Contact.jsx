@@ -1,5 +1,5 @@
-import ContactFooter from '@/Components/ContactFooter'
-import ContactForm from '@/Components/ContactForm'
+import ContactFooter from '../Components/ContactFooter'
+import ContactForm from '../Components/ContactForm'
 import React from 'react'
 
 const Contact = () => {

@@ -1,4 +1,4 @@
-import Contact from '@/Layout/Contact.jsx'
+import Contact from '../../Layout/Contact'
 import React from 'react'
 
 const ContactPage = () => {

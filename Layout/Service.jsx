@@ -82,7 +82,7 @@ const Service = () => {
         {services.map((service, index) => (
           <div
             key={index}
-            className="bg-[#D9D9D9] shadow-custom h-[255px] w-[220px] flex flex-col items-center rounded-2xl py-3"
+            className="bg-[#D9D9D9] hover:shadow-custom hover:scale-105 transition-all duration-300 ease-in-out h-[255px] w-[220px] flex flex-col items-center rounded-2xl py-3"
           >
             <div className="bg-primary h-20 w-20 rounded-full">{service.icon}</div>
             <div className="flex flex-col items-center pt-2">
