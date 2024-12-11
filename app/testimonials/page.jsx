@@ -1,4 +1,4 @@
-import Testimonial from '@/Layout/Testimonial'
+import Testimonial from '../../Layout/Testimonial'
 import React from 'react'
 
 const TestimonialPage = () => {
