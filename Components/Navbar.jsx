@@ -18,7 +18,7 @@ const Navbar = () => {
     { name: 'Services', route: '/services' },
     { name: 'About Us', route: '/about' },
     { name: 'Contact Us', route: '/contact' },
-    { name: 'Book Us', route: '/book' },
+    { name: 'Book Us', route: '/calendly.com/taskfree221/30min' },
   ];
 
   return (
@@ -27,17 +27,17 @@ const Navbar = () => {
       <Image src="/logo.svg" alt="Logo" width={100} height={100} />
 
       {/* Hamburger Icon for Small Screens */}
-      <div className="md:hidden">
+      <div className="md:hidden h-10 w-10">
         {isMenuOpen ? (
           <ImCross
-            // color="white"
-            className="text-2xl cursor-pointer"
+            color=""
+            className="text-4xl cursor-pointer p-2 rounded-lg text-primary bg-secondary"
             onClick={() => setIsMenuOpen(false)}
           />
         ) : (
           <GiHamburgerMenu
-            // color="white"
-            className="text-3xl cursor-pointer"
+            color=""
+            className="text-4xl cursor-pointer p-1 rounded-lg text-primary bg-secondary"
             onClick={() => setIsMenuOpen(true)}
           />
         )}
@@ -55,16 +55,28 @@ const Navbar = () => {
               active === item.name ? 'text-[#E38E49]' : ''
             }`}
           >
-            <Link
-              href={item.route}
-              onClick={() => {
-                setActive(item.name);
-                setIsMenuOpen(false); // Close menu on item click
-              }}
-              className="hover:text-[#E38E49] transition"
-            >
-              {item.name}
-            </Link>
+            {item.name === 'Book Us' ? (
+              <a
+                href='https://calendly.com/taskfree221/30min'
+                target="_blank" // Open in new tab
+                rel="noopener noreferrer" // Security feature
+                className="hover:text-[#E38E49] transition"
+                onClick={() => setIsMenuOpen(false)} // Close menu on click
+              >
+                {item.name}
+              </a>
+            ) : (
+              <Link
+                href={item.route}
+                onClick={() => {
+                  setActive(item.name);
+                  setIsMenuOpen(false); // Close menu on item click
+                }}
+                className="hover:text-[#E38E49] transition"
+              >
+                {item.name}
+              </Link>
+            )}
           </li>
         ))}
       </ul>

@@ -118,11 +118,25 @@ const HomePage = ({ content }) => {
     <div className="relative h-screen mt-20 lg:mt-[6.25rem]">
       {/* Background Image */}
       <div className="absolute -top-28 inset-0 -z-50">
-        <Image
+        {/* <Image
           src={content.heroImage}
           alt="Hero"
           fill
           className="object-cover"
+        /> */}
+        {/* Image for PC */}
+        <Image
+          src="/PC.png"
+          alt="Hero PC"
+          fill
+          className="hidden md:block object-cover"
+        />
+        {/* Image for Mobile */}
+        <Image
+          src="/Mobile.png"
+          alt="Hero Mobile"
+          fill
+          className="block md:hidden object-cover"
         />
       </div>
 
@@ -163,10 +177,10 @@ const HomePage = ({ content }) => {
         {!showPopup && (
           <div
             onClick={togglePopup}
-            className="bg-primary rounded-full text-white w-32 lg:w-40 h-12 lg:h-14 absolute bottom-10 lg:bottom-14 right-10 lg:right-20 text-center flex items-center justify-center space-x-1 cursor-pointer"
+            className="bg-primary rounded-full text-white w-12 lg:w-16 h-12 lg:h-14 absolute bottom-10 lg:bottom-14 right-10 lg:right-20 text-center flex items-center justify-center space-x-1 cursor-pointer"
           >
             <MdOutlineMessage className="h-5 w-5 lg:h-7 lg:w-7" />
-            <p className="text-sm lg:text-lg">{content.bookNowText}</p>
+            {/* <p className="text-sm lg:text-lg">{content.bookNowText}</p> */}
           </div>
         )}
 

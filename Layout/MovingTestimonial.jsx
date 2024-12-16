@@ -15,31 +15,46 @@ export function MovingTestimonial() {
 const testimonials = [
   {
     quote:
-      "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.",
-    name: "Charles Dickens",
-    title: "A Tale of Two Cities",
+      "Task Free has significantly improved our efficiency at Cosy Ghar Interior. Their support with scheduling and client communication has allowed us to focus more on design, leading to smoother workflows and happier clients. Highly recommended.",
+    name: "Sarina Gurung",
+    title: "CEO at Cosy Ghar Interior",
+    image: "/cosy.png",
+    alt: "Cosy"
   },
   {
     quote:
-      "To be, or not to be, that is the question: Whether 'tis nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take Arms against a Sea of troubles, And by opposing end them: to die, to sleep.",
-    name: "William Shakespeare",
-    title: "Hamlet",
+      "Task Free has been a real asset to our team. They’ve taken care of all the admin, so we can focus on what we do best, matching great people with great roles. Their efficiency and professionalism have made a huge difference, and I can’t recommend them enough.",
+    name: "Damar Gurung",
+    title: "Director at Red Parrot Recruitment Ltd.",
+    image: "/redpr.png",
+    alt: "Red Parrot Recruitment"
   },
   {
-    quote: "All that we see or seem is but a dream within a dream.",
-    name: "Edgar Allan Poe",
-    title: "A Dream Within a Dream",
+    quote: "Task Free has been a valuable asset to our business. They’ve efficiently managed our admin, freeing us up to focus on providing tailored mortgage advice. Their support has been seamless and reliable, and I wouldn't hesitate to recommend them.",
+    name: "Ramesh Ghale",
+    title: "Director at Ghale Mortgages",
+    image: "/ghale.png",
+    alt: "Ghale Mortgages"
   },
   {
-    quote:
-      "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.",
-    name: "Jane Austen",
-    title: "Pride and Prejudice",
+    quote: "Task Free has been a fantastic support to our team at Elm Apartments. Their efficient handling of admin tasks has freed us up to focus on delivering exceptional guest experiences. I highly recommend their services, they’ve been a great asset to our business.",
+    name: "Sajan Thapa",
+    title: "CEO at Elm Appartments",
+    image: "/elm.png",
+    alt: "Elm Appartments"
   },
   {
-    quote:
-      "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
-    name: "Herman Melville",
-    title: "Moby-Dick",
+    quote: "Task Free has been a real asset to AMN Consultancy Limited. Their team efficiently handles all our admin tasks, from scheduling to client correspondence, allowing us to focus on providing strategic insights and solutions for our clients. The support has been seamless, and we’re now able to work more efficiently and deliver better results. I highly recommend their services for any business looking to streamline operations.",
+    name: "Numan Ali",
+    title: "Senior Business Analyst at AMN Consultancy Limited",
+    image: "/amn.png",
+    alt: "AMN Consultancy Limited"
+  },
+  {
+    quote: "Working with Task Free has been a real game-changer for us at Yeti Homes. Their team has seamlessly handled our administrative tasks, giving us the time and space to focus on delivering top-quality service to our clients. Task Free’s virtual assistants are not only efficient but also proactive, always staying ahead of our needs. They've truly helped us streamline our operations and improve our overall efficiency. If you're looking to lighten the load and enhance your business operations, I can't recommend Task Free enough.",
+    name: "Yam Roka",
+    title: "Director at Yeti Homes",
+    image: "/yeti.png",
+    alt: "Yeti Homes"
   },
 ];
